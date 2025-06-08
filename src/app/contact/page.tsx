@@ -1,6 +1,7 @@
 import { FaPhone, FaEnvelope } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -26,7 +27,7 @@ export default function Contact() {
                 <div className="space-y-8">
                   <h2 className="text-4xl font-bold text-[#4b0d18]">Contact Us</h2>
                   <p className="text-gray-600 text-lg">
-                    Have questions? We're here to help. Reach out to us through any of these channels.
+                    Have questions? We&apos;re here to help. Reach out to us through any of these channels.
                   </p>
                   
                   <div className="space-y-6">
@@ -136,10 +137,11 @@ export default function Contact() {
         {/* CTA Section */}
         <section className="relative py-24">
           <div className="absolute inset-0 z-0">
-            <img
+            <Image
               src="/cta-bg.jpg"
               alt="Background"
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
             <div className="absolute inset-0 bg-black opacity-50"></div>
           </div>
