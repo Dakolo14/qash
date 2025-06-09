@@ -1,26 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Bai_Jamjuree } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 import CookieConsent from "@/components/CookieConsent";
 import BackToTopButton from "@/components/BackToTopButton";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const baiJamjuree = Bai_Jamjuree({
-  weight: ['200', '300', '400', '500', '600', '700'],
-  variable: "--font-bai-jamjuree",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Qash Capital",
@@ -35,15 +19,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${baiJamjuree.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-white`}
-      >
-        <Navbar />
+      <body className={inter.className}>
         {children}
         <CookieConsent />
         <BackToTopButton />

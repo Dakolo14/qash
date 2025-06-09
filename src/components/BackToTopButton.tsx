@@ -6,43 +6,36 @@ import { FaArrowUp } from 'react-icons/fa';
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show button when page is scrolled up to a certain amount
-  const toggleVisibility = () => {
-    if (window.scrollY > 300) { // Adjust this value as needed
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
 
-  // Scroll the page to the top
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: 'smooth'
     });
   };
 
-  useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
-
-    return () => {
-      window.removeEventListener('scroll', toggleVisibility);
-    };
-  }, []);
+  if (!isVisible) return null;
 
   return (
-    <>
-      {isVisible && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-[#4b0d18] text-white p-3 rounded-full shadow-lg hover:bg-opacity-80 transition-opacity duration-300 z-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#4b0d18]"
-          aria-label="Back to top"
-        >
-          <FaArrowUp className="text-xl" />
-        </button>
-      )}
-    </>
+    <button
+      onClick={scrollToTop}
+      className="fixed bottom-8 right-8 bg-gradient-to-r from-orange-600 to-red-800 text-white p-4 rounded-full shadow-lg hover:from-orange-700 hover:to-red-900 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-75 z-50"
+      aria-label="Scroll to top"
+    >
+      <FaArrowUp className="text-xl" />
+    </button>
   );
 };
 

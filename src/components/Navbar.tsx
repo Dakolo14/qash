@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,9 +36,9 @@ const Navbar = () => {
     <nav ref={navbarRef} className={`absolute top-0 left-0 w-full text-white z-50 ${pathname !== '/' ? 'bg-gradient-to-r from-[#4b0d18] to-orange-600' : ''}`}>
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-3">
+        <a href="/" className="flex items-center space-x-3">
           <Image src="/QA Logo.png" alt="Qash Capital Logo" width={160} height={52} className="h-10 object-contain" />
-        </Link>
+        </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">

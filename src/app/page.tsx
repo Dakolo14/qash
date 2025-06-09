@@ -1,7 +1,9 @@
 import Image from "next/image";
-import { FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FiPhone, FiMail } from 'react-icons/fi';
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Qash Capital - Home",
@@ -11,6 +13,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+       <Navbar />
       <div className="relative min-h-screen flex flex-col items-center justify-center text-center text-white px-4 bg-[url('/home-banner-image.png')] bg-cover bg-center">
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
@@ -60,13 +63,13 @@ export default function Home() {
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Founded in Lagos in 2025, Qash Capital transforms financial access for everyday
                 Nigerians with deep local understanding and global standards. Our diverse team
-                represents Nigeria&apos;s resilience and innovation, committed to providing flexible,
+                represents Nigeria's resilience and innovation, committed to providing flexible,
                 fair financial services for all.
               </p>
               <p className="text-gray-700 mb-8 leading-relaxed">
                 We believe financial inclusion is not just a privilege for the few, but a right for all
                 Nigerians. Our solutions are tailored to address the unique challenges and
-                opportunities in Nigeria&apos;s vibrant economy.
+                opportunities in Nigeria's vibrant economy.
               </p>
               <a href="/services" className="bg-red-800 hover:bg-red-900 text-white font-semibold py-3 px-8 rounded-full transition duration-300 ease-in-out shadow-md hover:shadow-lg transform hover:scale-105">
               Learn More
@@ -135,7 +138,7 @@ export default function Home() {
             <div className="flex flex-col items-center text-center">
               {/* Illustration Placeholder */}
               <div className="w-32 h-32 rounded-full flex items-center justify-center mb-4">
-                <Image src="/school fees.png" alt="School Fees Illustration" width={128} height={128} />
+                <Image src="/school fees.png" alt="School Fees Illustration" width={128} height={128} className="mx-auto" />
               </div>
               <h3 className="text-xl font-semibold mb-2">School Fees</h3>
               <p className="text-gray-400 mb-4 leading-relaxed">
@@ -150,7 +153,7 @@ export default function Home() {
             <div className="flex flex-col items-center text-center">
               {/* Illustration Placeholder */}
               <div className="w-32 h-32 rounded-full flex items-center justify-center mb-4">
-                <Image src="/rent finance.png" alt="Rent Finance Illustration" width={128} height={128} />
+                <Image src="/rent finance.png" alt="Rent Finance Illustration" width={128} height={128} className="mx-auto" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Rent Finance</h3>
               <p className="text-gray-400 mb-4 leading-relaxed">
@@ -165,7 +168,7 @@ export default function Home() {
             <div className="flex flex-col items-center text-center">
               {/* Illustration Placeholder */}
               <div className="w-32 h-32 rounded-full flex items-center justify-center mb-4">
-                <Image src="/micro savings.png" alt="Micro Savings Illustration" width={128} height={128} />
+                <Image src="/micro savings.png" alt="Micro Savings Illustration" width={128} height={128} className="mx-auto" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Micro Savings</h3>
               <p className="text-gray-400 mb-4 leading-relaxed">
@@ -194,7 +197,7 @@ export default function Home() {
               <div className="space-y-8">
                 <h2 className="text-4xl font-bold text-[#4b0d18]">Contact Us</h2>
                 <p className="text-gray-600 text-lg">
-                  Have questions? We&apos;re here to help. Reach out to us through any of these channels.
+                  Have questions? We're here to help. Reach out to us through any of these channels.
                 </p>
                 
                 <div className="space-y-6">
@@ -304,11 +307,10 @@ export default function Home() {
       {/* CTA Section */}
       <section className="relative py-24">
         <div className="absolute inset-0 z-0">
-          <Image
+          <img
             src="/cta-bg.jpg"
             alt="Background"
-            layout="fill"
-            objectFit="cover"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
@@ -322,7 +324,7 @@ export default function Home() {
               Apply Now
             </a>
           </div>
-        </div>
+    </div>
       </section>
 
       <Footer />

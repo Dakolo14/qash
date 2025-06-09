@@ -4,55 +4,36 @@ import { useState, useEffect } from 'react';
 
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [hasAccepted, setHasAccepted] = useState(false);
 
   useEffect(() => {
-    // Check if the user has already made a choice
     const consent = localStorage.getItem('cookieConsent');
-    if (consent === 'accepted') {
-      setHasAccepted(true);
-    } else if (consent === 'rejected') {
-      setHasAccepted(true); // Don't show if rejected previously
-    } else {
-      setIsVisible(true); // Show the banner if no choice yet
+    if (!consent) {
+      setIsVisible(true);
     }
   }, []);
 
-  const handleAccept = () => {
-    localStorage.setItem('cookieConsent', 'accepted');
+  const acceptCookies = () => {
+    localStorage.setItem('cookieConsent', 'true');
     setIsVisible(false);
-    setHasAccepted(true);
   };
 
-  const handleReject = () => {
-    localStorage.setItem('cookieConsent', 'rejected');
-    setIsVisible(false);
-    setHasAccepted(true);
-  };
-
-  if (hasAccepted || !isVisible) {
-    return null;
-  }
+  if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-[#4b0d18] text-white p-4 shadow-lg z-50 transform translate-y-0 transition-transform duration-500 ease-in-out">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
-        <p className="mb-4 md:mb-0 text-sm md:text-base text-center md:text-left">
-          This website uses cookies to ensure you get the best experience on our website. 
-          By continuing to use this site, you agree to our <a href="/privacy" className="underline hover:text-gray-200">Privacy Policy</a>.
-        </p>
+    <div className="fixed bottom-0 left-0 right-0 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50"
+         style={{ transform: isVisible ? 'translateY(0)' : 'translateY(100%)' }}>
+      <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between">
+        <div className="text-gray-800 mb-4 md:mb-0">
+          <p className="text-sm">
+            We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
+          </p>
+        </div>
         <div className="flex space-x-4">
           <button
-            onClick={handleAccept}
-            className="bg-white text-[#4b0d18] px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-md"
+            onClick={acceptCookies}
+            className="bg-gradient-to-r from-orange-600 to-red-800 text-white px-6 py-2 rounded-full hover:from-orange-700 hover:to-red-900 transition-all duration-300"
           >
             Accept
-          </button>
-          <button
-            onClick={handleReject}
-            className="border border-white text-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-[#4b0d18] transition-colors shadow-md"
-          >
-            Reject
           </button>
         </div>
       </div>
