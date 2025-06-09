@@ -120,10 +120,13 @@ export default function Services() {
       {/* CTA Section */}
       <section className="relative py-24">
           <div className="absolute inset-0 z-0">
-            <img
+            <Image
               src="/cta-bg.jpg"
               alt="Background"
+              width={1920}
+              height={1080}
               className="w-full h-full object-cover"
+              priority
             />
             <div className="absolute inset-0 bg-black opacity-50"></div>
           </div>

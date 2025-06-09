@@ -13,23 +13,22 @@ export default function Home() {
   return (
     <>
        <Navbar />
-      <div className="relative min-h-screen flex flex-col items-center justify-center text-center text-white px-4 bg-[url('/home-banner-image.png')] bg-cover bg-center">
+      <div className="relative min-h-screen flex flex-col items-center justify-center text-center text-white px-4 py-16 sm:py-24 bg-[url('/home-banner-image.png')] bg-cover bg-center">
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center">
-          <h1 className="text-4xl sm:text-5xl max-w-6xl md:text-6xl font-bold mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 leading-tight max-w-4xl">
             Unlock Your Financial Potential with Qash Capital
           </h1>
-          <p className="text-lg sm:text-xl mb-8 max-w-3xl">
-            Access flexible loans, smart savings solutions, and expert financial
-            services tailored to help you achieve your goals.
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl px-2">
+            Access flexible loans, smart savings solutions, and expert financial services.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href="/apply" className="bg-red-800 hover:bg-red-900 text-white font-semibold py-3 px-8 rounded-full transition duration-300 ease-in-out shadow-md hover:shadow-lg transform hover:scale-105">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <a href="/apply" className="bg-red-800 hover:bg-red-900 text-white font-semibold py-2.5 sm:py-3 px-6 sm:px-8 rounded-full transition duration-300 ease-in-out shadow-md hover:shadow-lg transform hover:scale-105">
               Apply Now
             </a>
-            <a href="/services" className="border border-white text-white font-semibold py-3 px-8 rounded-full transition duration-300 ease-in-out hover:bg-white hover:text-red-800 shadow-md hover:shadow-lg transform hover:scale-105">
+            <a href="/services" className="border border-white text-white font-semibold py-2.5 sm:py-3 px-6 sm:px-8 rounded-full transition duration-300 ease-in-out hover:bg-white hover:text-red-800 shadow-md hover:shadow-lg transform hover:scale-105">
               Learn More
             </a>
           </div>
@@ -37,8 +36,8 @@ export default function Home() {
       </div>
 
       {/* About Section (from homepage) */}
-      <section className="container mx-auto py-24 px-4 bg-white">
-          <div className="flex flex-col md:flex-row items-center gap-12">
+      <section className="container mx-auto py-16 sm:py-24 px-4 sm:px-6 bg-white">
+          <div className="flex flex-col md:flex-row items-center gap-8 sm:gap-12">
             {/* Image Container - Left Column */}
             <div className="md:w-1/2 flex justify-center">
               <div className="w-full max-w-md aspect-square rounded-3xl shadow-xl overflow-hidden relative">
@@ -78,7 +77,7 @@ export default function Home() {
         </section>
 
       {/* Services Section */}
-      <section className="py-24 px-12"> {/* Outer section for vertical padding and overall background */}
+      <section className="py-24 lg:px-12 md:px-6 sm:px-4"> {/* Outer section for vertical padding and overall background */}
         <div className="container mx-auto p-8 text-white text-center rounded-3xl shadow-xl bg-cover bg-center"> {/* Inner container for texture background and content */}
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 leading-tight">
             Transform Finance Growth with Effective Services
