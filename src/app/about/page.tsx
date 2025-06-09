@@ -43,13 +43,13 @@ export default function About() {
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Founded in Lagos in 2025, Qash Capital transforms financial access for everyday
                 Nigerians with deep local understanding and global standards. Our diverse team
-                represents Nigeria's resilience and innovation, committed to providing flexible,
+                represents Nigeria&apos;s resilience and innovation, committed to providing flexible,
                 fair financial services for all.
               </p>
               <p className="text-gray-700 mb-8 leading-relaxed">
                 We believe financial inclusion is not just a privilege for the few, but a right for all
                 Nigerians. Our solutions are tailored to address the unique challenges and
-                opportunities in Nigeria's vibrant economy.
+                opportunities in Nigeria&apos;s vibrant economy.
               </p>
             </div>
           </div>

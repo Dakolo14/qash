@@ -1,27 +1,29 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { HiMenu, HiX } from "react-icons/hi";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import Link from 'next/link';
+import { FiMenu, FiX } from 'react-icons/fi';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const navbarRef = useRef<HTMLElement>(null);
   const pathname = usePathname();
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
+        setIsMenuOpen(false);
       }
     };
 
-    if (isOpen) {
+    if (isMenuOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -30,70 +32,59 @@ const Navbar = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isOpen]);
+  }, [isMenuOpen]);
 
   return (
-    <nav ref={navbarRef} className={`absolute top-0 left-0 w-full text-white z-50 ${pathname !== '/' ? 'bg-gradient-to-r from-[#4b0d18] to-orange-600' : ''}`}>
+    <nav ref={navbarRef} className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#4b0d18] shadow-lg' : 'bg-transparent'}`}>
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
-        <a href="/" className="flex items-center space-x-3">
+        <Link href="/" className="flex items-center space-x-3">
           <Image src="/QA Logo.png" alt="Qash Capital Logo" width={160} height={52} className="h-10 object-contain" />
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="/" className="hover:text-gray-200 transition-colors">Home</a>
-          <a href="/about" className="hover:text-gray-200 transition-colors">About Us</a>
-          <a href="/services" className="hover:text-gray-200 transition-colors">Services</a>
-          <a href="/contact" className="hover:text-gray-200 transition-colors">Contact</a>
-          <a href="/apply" className={`${pathname === '/' ? 'bg-gradient-to-r from-orange-600 to-red-800 text-white hover:from-orange-700 hover:to-red-900' : 'bg-white text-[#4b0d18] hover:bg-gray-100'} font-semibold py-2 px-6 rounded-full transition-colors`}>
+          <Link href="/" className="hover:text-gray-200 transition-colors">Home</Link>
+          <Link href="/about" className="hover:text-gray-200 transition-colors">About Us</Link>
+          <Link href="/services" className="hover:text-gray-200 transition-colors">Services</Link>
+          <Link href="/contact" className="hover:text-gray-200 transition-colors">Contact</Link>
+          <Link href="/apply" className={`${pathname === '/' ? 'bg-gradient-to-r from-orange-600 to-red-800 text-white hover:from-orange-700 hover:to-red-900' : 'bg-white text-[#4b0d18] hover:bg-gray-100'} font-semibold py-2 px-6 rounded-full transition-colors`}>
             Apply Now
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-white focus:outline-none">
-            {isOpen ? <HiX className="h-8 w-8" /> : <HiMenu className="h-8 w-8" />}
-          </button>
-        </div>
+        <button
+          onClick={toggleMenu}
+          className="md:hidden text-white p-2 focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+        </button>
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black opacity-75 z-30 md:hidden"
-          onClick={toggleMenu}
-        ></div>
+      {isMenuOpen && (
+        <div className="md:hidden bg-[#4b0d18] absolute top-full left-0 right-0 shadow-lg">
+          <div className="flex flex-col items-center space-y-6 py-8">
+            <Link href="/" className="text-white text-lg hover:text-gray-200 transition-colors" onClick={toggleMenu}>
+              Home
+            </Link>
+            <Link href="/about" className="text-white text-lg hover:text-gray-200 transition-colors" onClick={toggleMenu}>
+              About Us
+            </Link>
+            <Link href="/services" className="text-white text-lg hover:text-gray-200 transition-colors" onClick={toggleMenu}>
+              Services
+            </Link>
+            <Link href="/contact" className="text-white text-lg hover:text-gray-200 transition-colors" onClick={toggleMenu}>
+              Contact
+            </Link>
+            <Link href="/apply" className={`${pathname === '/' ? 'bg-gradient-to-r from-orange-600 to-red-800 text-white hover:from-orange-700 hover:to-red-900' : 'bg-white text-[#4b0d18] hover:bg-gray-100'} font-semibold py-2 px-6 rounded-full transition-colors w-3/4`} onClick={toggleMenu}>
+              Apply Now
+            </Link>
+          </div>
+        </div>
       )}
-      <div
-        className={`fixed inset-y-0 right-0 w-64 bg-[#4b0d18] z-40 transform ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out md:hidden shadow-lg`}
-      >
-        <div className="flex justify-end p-4">
-          <button onClick={toggleMenu} className="text-white focus:outline-none">
-            <HiX className="h-8 w-8" />
-          </button>
-        </div>
-        <div className="flex flex-col items-center space-y-6 py-8">
-          <a href="/" className="text-white text-lg hover:text-gray-200 transition-colors" onClick={toggleMenu}>
-            Home
-          </a>
-          <a href="/about" className="text-white text-lg hover:text-gray-200 transition-colors" onClick={toggleMenu}>
-            About Us
-          </a>
-          <a href="/services" className="text-white text-lg hover:text-gray-200 transition-colors" onClick={toggleMenu}>
-            Services
-          </a>
-          <a href="/contact" className="text-white text-lg hover:text-gray-200 transition-colors" onClick={toggleMenu}>
-            Contact
-          </a>
-          <a href="/apply" className={`${pathname === '/' ? 'bg-gradient-to-r from-orange-600 to-red-800 text-white hover:from-orange-700 hover:to-red-900' : 'bg-white text-[#4b0d18] hover:bg-gray-100'} font-semibold py-2 px-6 rounded-full transition-colors w-3/4`} onClick={toggleMenu}>
-            Apply Now
-          </a>
-        </div>
-      </div>
     </nav>
   );
 };

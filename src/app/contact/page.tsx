@@ -26,7 +26,7 @@ export default function Contact() {
                 <div className="space-y-8">
                   <h2 className="text-4xl font-bold text-[#4b0d18]">Contact Us</h2>
                   <p className="text-gray-600 text-lg">
-                    Have questions? We're here to help. Reach out to us through any of these channels.
+                    Have questions? We&apos;re here to help. Reach out to us through any of these channels.
                   </p>
                   
                   <div className="space-y-6">

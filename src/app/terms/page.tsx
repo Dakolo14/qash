@@ -33,7 +33,7 @@ export default function Terms() {
 
               <h2 className="text-3xl font-bold text-[#4b0d18] mb-4">2. Use of Services</h2>
               <p className="text-gray-700 leading-relaxed">
-                Our services are provided for informational and financial transaction purposes. You agree to use our services only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the services.
+                Our services are provided for informational and financial transaction purposes. You agree to use our services only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else&apos;s use and enjoyment of the services.
               </p>
 
               <h2 className="text-3xl font-bold text-[#4b0d18] mb-4">3. Privacy Policy</h2>
@@ -43,7 +43,7 @@ export default function Terms() {
               
               <h2 className="text-3xl font-bold text-[#4b0d18] mb-4">4. Disclaimers</h2>
               <p className="text-gray-700 leading-relaxed">
-                The information and services on this website are provided "as is" without any representations or warranties, express or implied. Qash Capital makes no representations or warranties in relation to this website or the information and materials provided on this website.
+                The information and services on this website are provided &quot;as is&quot; without any representations or warranties, express or implied. Qash Capital makes no representations or warranties in relation to this website or the information and materials provided on this website.
               </p>
 
               <h2 className="text-3xl font-bold text-[#4b0d18] mb-4">5. Limitation of Liability</h2>

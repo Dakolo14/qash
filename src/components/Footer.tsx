@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FiPhone, FiMail } from 'react-icons/fi';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -35,16 +36,16 @@ const Footer = () => {
             <h3 className="text-2xl font-bold font-serif mb-6">Quick Links</h3>
             <div className="grid grid-cols-2 gap-4">
               <ul className="space-y-3">
-                <li><a href="/" className="text-gray-200 hover:text-white transition-colors">Home</a></li>
-                <li><a href="/about" className="text-gray-200 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="/services" className="text-gray-200 hover:text-white transition-colors">Services</a></li>
-                <li><a href="/contact" className="text-gray-200 hover:text-white transition-colors">Contact</a></li>
+                <li><Link href="/" className="text-gray-200 hover:text-white transition-colors">Home</Link></li>
+                <li><Link href="/about" className="text-gray-200 hover:text-white transition-colors">About Us</Link></li>
+                <li><Link href="/services" className="text-gray-200 hover:text-white transition-colors">Services</Link></li>
+                <li><Link href="/contact" className="text-gray-200 hover:text-white transition-colors">Contact</Link></li>
               </ul>
               <ul className="space-y-3">
-                <li><a href="/terms" className="text-gray-200 hover:text-white transition-colors">Terms</a></li>
-                <li><a href="/privacy" className="text-gray-200 hover:text-white transition-colors">Privacy</a></li>
-                <li><a href="#" className="text-gray-200 hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="text-gray-200 hover:text-white transition-colors">Blog</a></li>
+                <li><Link href="/terms" className="text-gray-200 hover:text-white transition-colors">Terms</Link></li>
+                <li><Link href="/privacy" className="text-gray-200 hover:text-white transition-colors">Privacy</Link></li>
+                <li><Link href="#" className="text-gray-200 hover:text-white transition-colors">Careers</Link></li>
+                <li><Link href="#" className="text-gray-200 hover:text-white transition-colors">Blog</Link></li>
               </ul>
             </div>
           </div>

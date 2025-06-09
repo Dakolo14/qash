@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { FaPhone, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-import { FiPhone, FiMail } from 'react-icons/fi';
+import { FaPhone, FaEnvelope } from 'react-icons/fa';
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
@@ -63,13 +62,13 @@ export default function Home() {
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Founded in Lagos in 2025, Qash Capital transforms financial access for everyday
                 Nigerians with deep local understanding and global standards. Our diverse team
-                represents Nigeria's resilience and innovation, committed to providing flexible,
+                represents Nigeria&apos;s resilience and innovation, committed to providing flexible,
                 fair financial services for all.
               </p>
               <p className="text-gray-700 mb-8 leading-relaxed">
                 We believe financial inclusion is not just a privilege for the few, but a right for all
                 Nigerians. Our solutions are tailored to address the unique challenges and
-                opportunities in Nigeria's vibrant economy.
+                opportunities in Nigeria&apos;s vibrant economy.
               </p>
               <a href="/services" className="bg-red-800 hover:bg-red-900 text-white font-semibold py-3 px-8 rounded-full transition duration-300 ease-in-out shadow-md hover:shadow-lg transform hover:scale-105">
               Learn More
@@ -197,7 +196,7 @@ export default function Home() {
               <div className="space-y-8">
                 <h2 className="text-4xl font-bold text-[#4b0d18]">Contact Us</h2>
                 <p className="text-gray-600 text-lg">
-                  Have questions? We're here to help. Reach out to us through any of these channels.
+                  Have questions? We&apos;re here to help. Reach out to us through any of these channels.
                 </p>
                 
                 <div className="space-y-6">
