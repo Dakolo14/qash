@@ -306,10 +306,13 @@ export default function Home() {
       {/* CTA Section */}
       <section className="relative py-24">
         <div className="absolute inset-0 z-0">
-          <img
-            src="/cta-bg.jpg"
-            alt="Background"
-            className="w-full h-full object-cover"
+          <Image
+            src="/hero-image.jpg"
+            alt="Qash Capital Hero"
+            width={1920}
+            height={1080}
+            className="absolute inset-0 w-full h-full object-cover"
+            priority
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
