@@ -119,29 +119,26 @@ export default function Services() {
 
       {/* CTA Section */}
       <section className="relative py-24">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/services-hero.jpg"
-            alt="Our Services"
-            width={1920}
-            height={1080}
-            className="w-full h-[400px] object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-black opacity-50"></div>
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
-            <p className="text-lg text-white mb-8 max-w-2xl mx-auto">
-              Take the first step towards achieving your financial goals with Qash Capital.
-            </p>
-            <a href="/apply" className="bg-white text-[#4b0d18] hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg transform hover:scale-105">
-              Apply Now
-            </a>
+          <div className="absolute inset-0 z-0">
+            <img
+              src="/cta-bg.jpg"
+              alt="Background"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
           </div>
-        </div>
-      </section>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-6xl mx-auto text-center">
+              <h2 className="text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
+              <p className="text-lg text-white mb-8 max-w-2xl mx-auto">
+                Take the first step towards achieving your financial goals with Qash Capital.
+              </p>
+              <a href="/apply" className="bg-white text-[#4b0d18] hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg transform hover:scale-105">
+                Apply Now
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

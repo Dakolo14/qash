@@ -18,7 +18,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
+          <h1 className="text-4xl sm:text-5xl max-w-6xl md:text-6xl font-bold mb-4 leading-tight">
             Unlock Your Financial Potential with Qash Capital
           </h1>
           <p className="text-lg sm:text-xl mb-8 max-w-3xl">
@@ -70,7 +70,7 @@ export default function Home() {
                 Nigerians. Our solutions are tailored to address the unique challenges and
                 opportunities in Nigeria&apos;s vibrant economy.
               </p>
-              <a href="/services" className="bg-red-800 hover:bg-red-900 text-white font-semibold py-3 px-8 rounded-full transition duration-300 ease-in-out shadow-md hover:shadow-lg transform hover:scale-105">
+              <a href="/about" className="bg-red-800 hover:bg-red-900 text-white font-semibold py-3 px-8 rounded-full transition duration-300 ease-in-out shadow-md hover:shadow-lg transform hover:scale-105">
               Learn More
             </a>
             </div>
@@ -307,7 +307,7 @@ export default function Home() {
       <section className="relative py-24">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/hero-image.jpg"
+            src="/cta-bg.jpg"
             alt="Qash Capital Hero"
             width={1920}
             height={1080}

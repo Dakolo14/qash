@@ -16,14 +16,6 @@ export default function Contact() {
               Get in touch with us for any questions or assistance you need.
             </p>
           </div>
-          <Image
-            src="/contact-hero.jpg"
-            alt="Contact Us"
-            width={1920}
-            height={1080}
-            className="w-full h-[400px] object-cover"
-            priority
-          />
         </section>
 
         {/* Contact Section */}

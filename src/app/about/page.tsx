@@ -61,14 +61,14 @@ export default function About() {
             <h2 className="text-4xl font-bold text-[#4b0d18] mb-12">Our Mission & Vision</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
               <div>
-                <Image src="/mission.png" alt="Our Mission" width={120} height={120} className="mx-auto mb-6" />
+                <Image src="/mission.png" alt="Our Mission" width={124} height={124} className="mx-auto mb-6" />
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Our Mission</h3>
                 <p className="text-gray-700 leading-relaxed text-center">
                   To empower Nigerians with accessible, fair, and innovative financial solutions that foster economic growth and personal prosperity.
                 </p>
               </div>
               <div>
-                <Image src="/vision.png" alt="Our Vision" width={120} height={120} className="mx-auto mb-6" />
+                <Image src="/vision.png" alt="Our Vision" width={120} height={120} className="mx-auto mb-6 h-42 w-42" />
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Our Vision</h3>
                 <p className="text-gray-700 leading-relaxed text-center">
                   To be the leading financial partner for every Nigerian, recognized for our integrity, innovation, and unwavering commitment to client success.
