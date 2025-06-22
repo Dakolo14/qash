@@ -166,7 +166,7 @@ export default function Home() {
             <div className="flex flex-col items-center text-center">
               {/* Illustration Placeholder */}
               <div className="w-32 h-32 rounded-full flex items-center justify-center mb-4">
-                <Image src="/proof of funds.png" alt="Proof of Funds Illustration" width={128} height={128} className="mx-auto" />
+                <Image src="/Proof of funds.png" alt="Proof of Funds Illustration" width={128} height={128} className="mx-auto" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Proof of Funds</h3>
               <p className="text-gray-400 mb-4 leading-relaxed">

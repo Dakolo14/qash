@@ -88,11 +88,11 @@ export default function Services() {
               {/* Service Item 5: Rent Finance */}
               <div className="p-6 rounded-lg">
                 <div className="w-32 h-32 mx-auto mb-4">
-                  <Image src="/rent finance.png" alt="Rent Finance Illustration" width={128} height={128} className="mx-auto" />
+                <Image src="/vendor financing.png" alt="Vendor Financing Illustration" width={128} height={128} className="mx-auto" />
                 </div>
-                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Rent Finance</h3>
+                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Vendor Financing</h3>
                 <p className="text-gray-600 mb-4 text-center leading-relaxed">
-                  Finance up to 12 months of rent with affordable monthly repayments.
+                Flexible funding solutions for vendors to fulfill large orders and grow their business.
                 </p>
                 <div className="flex justify-center">
                   <a href="/services" className="text-orange-600 hover:text-orange-700 font-semibold">Learn More</a>
@@ -102,11 +102,11 @@ export default function Services() {
               {/* Service Item 6: Micro Savings */}
               <div className="p-6 rounded-lg">
                 <div className="w-32 h-32 mx-auto mb-4">
-                  <Image src="/micro savings.png" alt="Micro Savings Illustration" width={128} height={128} className="mx-auto" />
+                <Image src="/Proof of funds.png" alt="Proof of Funds Illustration" width={128} height={128} className="mx-auto" />
                 </div>
-                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Micro Savings</h3>
+                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Proof of Funds</h3>
                 <p className="text-gray-600 mb-4 text-center leading-relaxed">
-                  Start saving with as little as ₦1,000 with competitive interest rates.
+                Get official proof of funds documentation to support your business transactions and contracts.
                 </p>
                 <div className="flex justify-center">
                   <a href="/services" className="text-orange-600 hover:text-orange-700 font-semibold">Learn More</a>
