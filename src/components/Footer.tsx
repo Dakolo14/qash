@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FaTwitter, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { FiPhone, FiMail } from 'react-icons/fi';
 import Link from 'next/link';
 
