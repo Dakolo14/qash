@@ -147,30 +147,30 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Service Item 5: Rent Finance */}
+            {/* Service Item 5: Vendor Financing */}
             <div className="flex flex-col items-center text-center">
               {/* Illustration Placeholder */}
               <div className="w-32 h-32 rounded-full flex items-center justify-center mb-4">
-                <Image src="/rent finance.png" alt="Rent Finance Illustration" width={128} height={128} className="mx-auto" />
+                <Image src="/vendor financing.png" alt="Vendor Financing Illustration" width={128} height={128} className="mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Rent Finance</h3>
+              <h3 className="text-xl font-semibold mb-2">Vendor Financing</h3>
               <p className="text-gray-400 mb-4 leading-relaxed">
-                Finance up to 12 months of rent with affordable monthly repayments.
+                Flexible funding solutions for vendors to fulfill large orders and grow their business.
               </p>
               <div className="flex justify-center">
                 <a href="/services" className="text-blue-400 hover:underline font-semibold">Learn More</a>
               </div>
             </div>
 
-            {/* Service Item 6: Micro Savings */}
+            {/* Service Item 6: Proof of Funds */}
             <div className="flex flex-col items-center text-center">
               {/* Illustration Placeholder */}
               <div className="w-32 h-32 rounded-full flex items-center justify-center mb-4">
-                <Image src="/micro savings.png" alt="Micro Savings Illustration" width={128} height={128} className="mx-auto" />
+                <Image src="/proof of funds.png" alt="Proof of Funds Illustration" width={128} height={128} className="mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Micro Savings</h3>
+              <h3 className="text-xl font-semibold mb-2">Proof of Funds</h3>
               <p className="text-gray-400 mb-4 leading-relaxed">
-                Start saving with as little as ₦1,000 with competitive interest rates.
+                Get official proof of funds documentation to support your business transactions and contracts.
               </p>
               <div className="flex justify-center">
                 <a href="/services" className="text-blue-400 hover:underline font-semibold">Learn More</a>
@@ -205,7 +205,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-[#4b0d18]">Phone</h3>
-                      <p className="text-gray-600">09027740184</p>
+                      <p className="text-gray-600">08070454584</p>
                     </div>
                   </div>
                   

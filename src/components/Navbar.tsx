@@ -53,15 +53,16 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
-          <Link href="/" className="hover:text-gray-200 transition-colors">Home</Link>
-          <Link href="/about" className="hover:text-gray-200 transition-colors">About Us</Link>
-          <Link href="/services" className="hover:text-gray-200 transition-colors">Services</Link>
-          <Link href="/contact" className="hover:text-gray-200 transition-colors">Contact</Link>
+        <div className="hidden md:!flex items-center text-white space-x-8">
+          <Link href="/" className="text-white hover:text-gray-400 transition-colors">Home</Link>
+          <Link href="/about" className="text-white hover:text-gray-400 transition-colors">About Us</Link>
+          <Link href="/services" className="text-white hover:text-gray-400 transition-colors">Services</Link>
+          <Link href="/contact" className="text-white hover:text-gray-400 transition-colors">Contact</Link>
           <Link href="/apply" className={`${pathname === '/' ? 'bg-gradient-to-r from-orange-600 to-red-800 text-white hover:from-orange-700 hover:to-red-900' : 'bg-white text-[#4b0d18] hover:bg-gray-100'} font-semibold py-2 px-6 rounded-full transition-colors`}>
             Apply Now
           </Link>
         </div>
+        
 
         {/* Mobile Menu Button */}
         <button

@@ -37,7 +37,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold text-[#4b0d18]">Phone</h3>
-                        <p className="text-gray-600">09027740184</p>
+                        <p className="text-gray-600">08070454584</p>
                       </div>
                     </div>
                     

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { FiPhone, FiMail } from 'react-icons/fi';
 import Link from 'next/link';
 
@@ -19,14 +19,11 @@ const Footer = () => {
               smart savings, and expert financial services.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full p-3 bg-[#4b0d18] flex items-center justify-center hover:bg-opacity-80 transition-colors">
+              <a href="https://www.linkedin.com/company/qash-capital/" className="w-10 h-10 rounded-full p-3 bg-[#4b0d18] flex items-center justify-center hover:bg-opacity-80 transition-colors">
                 <FaLinkedinIn className="text-white text-3xl" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full p-3 bg-[#4b0d18] flex items-center justify-center hover:bg-opacity-80 transition-colors">
-                <FaTwitter className="text-white text-3xl" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full p-3 bg-[#4b0d18] flex items-center justify-center hover:bg-opacity-80 transition-colors">
-                <FaInstagram className="text-white text-3xl" />
+              <a href="https://wa.me/2348070454584" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full p-3 bg-[#4b0d18] flex items-center justify-center hover:bg-opacity-80 transition-colors">
+                <FaWhatsapp className="text-white text-3xl" />
               </a>
             </div>
           </div>
@@ -56,7 +53,7 @@ const Footer = () => {
             <div className="space-y-4 mb-6">
               <div className="flex items-center space-x-3">
                 <FiPhone className="text-white text-xl" />
-                <span className="text-gray-200">09027740184</span>
+                <span className="text-gray-200">08070454584</span>
               </div>
               <div className="flex items-center space-x-3">
                 <FiMail className="text-white text-xl" />
