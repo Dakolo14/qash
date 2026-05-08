@@ -211,7 +211,7 @@ export default function Funding() {
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
                 Submit Your Funding Application
               </h2>
-              <p className="text-gray-600 mt-4">Fill out the form below. We'll review your details and get back to you within 48 hours.</p>
+              <p className="text-gray-600 mt-4">Fill out the form below. We&apos;ll review your details and get back to you within 48 hours.</p>
             </div>
 
             {submitted && (
@@ -219,7 +219,7 @@ export default function Funding() {
                 <FaCheckCircle className="text-green-600 text-2xl shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-semibold text-green-900 mb-1">Application Received!</h3>
-                  <p className="text-green-800 text-sm">We'll review your application and contact you within 48 hours to discuss next steps.</p>
+                  <p className="text-green-800 text-sm">We&apos;ll review your application and contact you within 48 hours to discuss next steps.</p>
                 </div>
               </div>
             )}
@@ -411,7 +411,7 @@ export default function Funding() {
                 </button>
 
                 <p className="text-gray-500 text-xs text-center">
-                  We'll review your application and get back to you within 48 hours.
+                  We&apos;ll review your application and get back to you within 48 hours.
                 </p>
 
               </form>

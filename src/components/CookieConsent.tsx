@@ -14,7 +14,7 @@ const CookieConsent = () => {
       if (!consent) {
         setIsVisible(true);
       }
-    } catch (e) {
+    } catch (_) {
       // localStorage access failed, just return
       return;
     }
@@ -27,7 +27,7 @@ const CookieConsent = () => {
       
       window.localStorage.setItem('cookieConsent', 'true');
       setIsVisible(false);
-    } catch (e) {
+    } catch (_) {
       // localStorage access failed, just return
       return;
     }

@@ -93,7 +93,7 @@ export default function BookAdvisory() {
                 <FaCheckCircle className="text-green-600 text-2xl shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-semibold text-green-900 mb-1">Request Received!</h3>
-                  <p className="text-green-800 text-sm">We'll review your details and send you a confirmation with available time slots within 24 hours.</p>
+                  <p className="text-green-800 text-sm">We&apos;ll review your details and send you a confirmation with available time slots within 24 hours.</p>
                 </div>
               </div>
             )}
@@ -244,7 +244,7 @@ export default function BookAdvisory() {
                 </button>
 
                 <p className="text-gray-500 text-xs text-center">
-                  We'll get back to you within 24 hours to confirm your booking and discuss next steps.
+                  We&apos;ll get back to you within 24 hours to confirm your booking and discuss next steps.
                 </p>
 
               </form>
