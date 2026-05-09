@@ -29,26 +29,12 @@ export default function Services() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Service Item 1: Personal Loans */}
+              {/* Service Item 1: Business Financing */}
               <div className="p-6 rounded-lg">
                 <div className="w-32 h-32 mx-auto mb-4">
-                  <Image src="/personal loan.png" alt="Personal Loans Illustration" width={128} height={128} className="mx-auto" />
+                  <Image src="/business loan.png" alt="Business Financing Illustration" width={128} height={128} className="mx-auto" />
                 </div>
-                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Personal Loans</h3>
-                <p className="text-gray-600 mb-4 text-center leading-relaxed">
-                  Quick access to funds from ₦50K to ₦5M with flexible repayment options.
-                </p>
-                <div className="flex justify-center">
-                  <a href="/services" className="text-orange-600 hover:text-orange-700 font-semibold">Learn More</a>
-                </div>
-              </div>
-
-              {/* Service Item 2: Business Loans */}
-              <div className="p-6 rounded-lg">
-                <div className="w-32 h-32 mx-auto mb-4">
-                  <Image src="/business loan.png" alt="Business Loans Illustration" width={128} height={128} className="mx-auto" />
-                </div>
-                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Business Loans</h3>
+                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Business Financing</h3>
                 <p className="text-gray-600 mb-4 text-center leading-relaxed">
                   Financing solutions from ₦500K to ₦20M to help your business grow and thrive.
                 </p>
@@ -57,7 +43,49 @@ export default function Services() {
                 </div>
               </div>
 
-              {/* Service Item 3: Asset Finance */}
+              {/* Service Item 2: Vendor & Trade Finance */}
+              <div className="p-6 rounded-lg">
+                <div className="w-32 h-32 mx-auto mb-4">
+                  <Image src="/vendor financing.png" alt="Vendor & Trade Finance Illustration" width={128} height={128} className="mx-auto" />
+                </div>
+                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Vendor & Trade Finance</h3>
+                <p className="text-gray-600 mb-4 text-center leading-relaxed">
+                  Flexible funding solutions for vendors and traders to fulfill large orders and grow their business.
+                </p>
+                <div className="flex justify-center">
+                  <a href="/services" className="text-orange-600 hover:text-orange-700 font-semibold">Learn More</a>
+                </div>
+              </div>
+
+              {/* Service Item 3: Proof of Funds */}
+              <div className="p-6 rounded-lg">
+                <div className="w-32 h-32 mx-auto mb-4">
+                  <Image src="/Proof of funds.png" alt="Proof of Funds Illustration" width={128} height={128} className="mx-auto" />
+                </div>
+                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Proof of Funds</h3>
+                <p className="text-gray-600 mb-4 text-center leading-relaxed">
+                  Get official proof of funds documentation to support your business transactions and contracts.
+                </p>
+                <div className="flex justify-center">
+                  <a href="/services" className="text-orange-600 hover:text-orange-700 font-semibold">Learn More</a>
+                </div>
+              </div>
+
+              {/* Service Item 4: Financial Advisory */}
+              <div className="p-6 rounded-lg">
+                <div className="w-32 h-32 mx-auto mb-4">
+                  <div className="text-5xl text-center">📊</div>
+                </div>
+                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Financial Advisory</h3>
+                <p className="text-gray-600 mb-4 text-center leading-relaxed">
+                  Strategic advisory services focused on business growth, capital readiness, financial structuring, and long-term sustainability.
+                </p>
+                <div className="flex justify-center">
+                  <a href="/services" className="text-orange-600 hover:text-orange-700 font-semibold">Learn More</a>
+                </div>
+              </div>
+
+              {/* Service Item 5: Asset Finance */}
               <div className="p-6 rounded-lg">
                 <div className="w-32 h-32 mx-auto mb-4">
                   <Image src="/asset finance.png" alt="Asset Finance Illustration" width={128} height={128} className="mx-auto" />
@@ -71,42 +99,28 @@ export default function Services() {
                 </div>
               </div>
 
-              {/* Service Item 4: School Fees */}
+              {/* Service Item 6: Personal Loans */}
+              <div className="p-6 rounded-lg">
+                <div className="w-32 h-32 mx-auto mb-4">
+                  <Image src="/personal loan.png" alt="Personal Loans Illustration" width={128} height={128} className="mx-auto" />
+                </div>
+                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Personal Loans</h3>
+                <p className="text-gray-600 mb-4 text-center leading-relaxed">
+                  Quick access to funds from ₦50K to ₦5M with flexible repayment options.
+                </p>
+                <div className="flex justify-center">
+                  <a href="/services" className="text-orange-600 hover:text-orange-700 font-semibold">Learn More</a>
+                </div>
+              </div>
+
+              {/* Service Item 7: School Fees */}
               <div className="p-6 rounded-lg">
                 <div className="w-32 h-32 mx-auto mb-4">
                   <Image src="/school fees.png" alt="School Fees Illustration" width={128} height={128} className="mx-auto" />
                 </div>
-                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">School Fees</h3>
+                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">School Fees Loans</h3>
                 <p className="text-gray-600 mb-4 text-center leading-relaxed">
                   Cover educational expenses with payments spread over the academic year.
-                </p>
-                <div className="flex justify-center">
-                  <a href="/services" className="text-orange-600 hover:text-orange-700 font-semibold">Learn More</a>
-                </div>
-              </div>
-
-              {/* Service Item 5: Rent Finance */}
-              <div className="p-6 rounded-lg">
-                <div className="w-32 h-32 mx-auto mb-4">
-                <Image src="/vendor financing.png" alt="Vendor Financing Illustration" width={128} height={128} className="mx-auto" />
-                </div>
-                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Vendor Financing</h3>
-                <p className="text-gray-600 mb-4 text-center leading-relaxed">
-                Flexible funding solutions for vendors to fulfill large orders and grow their business.
-                </p>
-                <div className="flex justify-center">
-                  <a href="/services" className="text-orange-600 hover:text-orange-700 font-semibold">Learn More</a>
-                </div>
-              </div>
-
-              {/* Service Item 6: Micro Savings */}
-              <div className="p-6 rounded-lg">
-                <div className="w-32 h-32 mx-auto mb-4">
-                <Image src="/Proof of funds.png" alt="Proof of Funds Illustration" width={128} height={128} className="mx-auto" />
-                </div>
-                <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Proof of Funds</h3>
-                <p className="text-gray-600 mb-4 text-center leading-relaxed">
-                Get official proof of funds documentation to support your business transactions and contracts.
                 </p>
                 <div className="flex justify-center">
                   <a href="/services" className="text-orange-600 hover:text-orange-700 font-semibold">Learn More</a>

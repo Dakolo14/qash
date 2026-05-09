@@ -27,7 +27,7 @@ export default function About() {
               Built for Founders Who Want More Than Just Money
             </h1>
             <p className="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto">
-              We started Qash Capital because we saw a gap — ambitious Nigerian businesses with real potential, getting no real support.
+              Qash Capital is a Nigerian financial solutions company focused on helping businesses and individuals access strategic financing, growth advisory, and structured financial support.
             </p>
           </div>
         </section>
@@ -54,10 +54,10 @@ export default function About() {
                   The Gap in the Market
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  After years inside the banking and finance system, we saw the same story repeat itself: business owners who were working hard, had real revenue, and genuine ambition — but couldn&apos;t access meaningful capital or strategic support.
+                  With experience rooted in corporate banking, relationship management, and business growth strategy, we understand the realities of operating and scaling within the Nigerian market.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Not because they weren&apos;t good enough. But because no one was helping them present their business in the right way. No one was sitting across the table from them and saying — here&apos;s what you need to fix, here&apos;s what you need to say, and here&apos;s how to get funded.
+                  Our approach combines financial expertise, practical business insight, and relationship-driven service to deliver tailored financial solutions.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
                   We built Qash Capital to be that partner.
@@ -182,6 +182,33 @@ export default function About() {
             >
               Work With Us
             </a>
+          </div>
+        </section>
+
+        {/* Business Impact */}
+        <section className="w-full bg-white py-20 sm:py-24">
+          <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
+            <div className="text-center mb-12">
+              <span className="inline-block bg-orange-100 text-orange-800 text-sm font-semibold px-4 py-1 rounded-full mb-4">
+                Our Impact
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
+                Business Impact
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {[
+                { title: "Supported growing businesses with working capital solutions", desc: "Helping scale-ready companies access the funds they need to fuel growth" },
+                { title: "Structured financing support for operational expansion", desc: "Providing tailored capital structures for businesses ready to expand" },
+                { title: "Assisted vendors and traders with flexible financing solutions", desc: "Enabling supply chain participants to grow their operations" },
+                { title: "Facilitated proof of funds support for strategic transactions", desc: "Supporting major business deals and strategic initiatives" },
+              ].map((item) => (
+                <div key={item.title} className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

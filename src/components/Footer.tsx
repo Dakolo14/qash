@@ -15,8 +15,7 @@ const Footer = () => {
               <Image src="/QA Logo.png" alt="Qash Capital Logo" width={160} height={52} className="h-10 object-contain" />
             </div>
             <p className="text-gray-200 leading-relaxed mb-6">
-              Providing innovative financial solutions to help Nigerians achieve their goals through flexible loans,
-              smart savings, and expert financial services.
+              Structured Finance • Advisory • Growth Solutions
             </p>
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/company/qash-capital/" className="w-10 h-10 rounded-full p-3 bg-[#4b0d18] flex items-center justify-center hover:bg-opacity-80 transition-colors">

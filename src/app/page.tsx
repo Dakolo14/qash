@@ -19,23 +19,47 @@ export default function Home() {
         <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
         <div className="relative z-10 flex flex-col items-center justify-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 leading-tight max-w-4xl">
-            We Help Ambitious Businesses Grow
+            Structured Finance &amp; Growth Solutions for Ambitious Businesses
           </h1>
           <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl px-2 opacity-90">
-            Strategic advisory and structured funding for founders who want to build real, profitable businesses.
+            Qash Capital helps businesses access capital, optimize growth, and unlock strategic financial opportunities through tailored financing and advisory solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-            <a href="/contact" className="bg-red-800 hover:bg-red-900 text-white font-semibold py-2.5 sm:py-3 px-6 sm:px-8 rounded-full transition duration-300 ease-in-out shadow-md hover:shadow-lg transform hover:scale-105">
-              Work With Us
+            <a href="/advisory" className="bg-red-800 hover:bg-red-900 text-white font-semibold py-2.5 sm:py-3 px-6 sm:px-8 rounded-full transition duration-300 ease-in-out shadow-md hover:shadow-lg transform hover:scale-105">
+              Book a Consultation
             </a>
             <a href="/apply" className="border border-white text-white font-semibold py-2.5 sm:py-3 px-6 sm:px-8 rounded-full transition duration-300 ease-in-out hover:bg-white hover:text-red-800 shadow-md hover:shadow-lg transform hover:scale-105">
-              Apply for Funding
+              Explore Solutions
             </a>
           </div>
         </div>
       </div>
 
-      {/* Section 2: The Problem */}
+      {/* Section 2: Why Qash Capital */}
+      <section className="w-full bg-gray-50 py-20 sm:py-24">
+        <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-8">
+              Why Qash Capital
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              { title: "Relationship-Driven Approach", desc: "We build lasting partnerships with our clients, understanding their business deeply and providing strategic support beyond just funding." },
+              { title: "Flexible Financial Solutions", desc: "Every business is unique. We tailor our financing structures to match your specific needs, stage, and growth objectives." },
+              { title: "Deep Understanding of the Nigerian Market", desc: "We navigate the complexities of the Nigerian business environment, providing solutions grounded in local reality and expertise." },
+              { title: "Corporate Finance & Business Growth Expertise", desc: "Our team brings years of banking, corporate finance, and business advisory experience to every engagement." },
+            ].map((item) => (
+              <div key={item.title} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3: The Problem */}
       <section className="w-full bg-white py-20 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
           <div className="text-center mb-10">
@@ -98,7 +122,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 3: What We Do */}
+      {/* Section 4: What We Do */}
       <section className="py-20 sm:py-24" style={{ backgroundColor: '#000000', backgroundImage: "url('/noise-texture.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container mx-auto px-4 sm:px-6 text-center">
           <span className="inline-block bg-white/10 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
@@ -131,7 +155,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 4: Who This Is For */}
+      {/* Section 5: Who This Is For */}
       <section className="w-full bg-gray-50 py-20 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
@@ -158,7 +182,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 5: How It Works */}
+      {/* Section 6: How It Works */}
       <section className="py-20 sm:py-24" style={{ backgroundColor: '#1e1e1e' }}>
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
@@ -230,7 +254,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 6: Why Qash */}
+      {/* Section 7: Why Qash */}
       <section className="w-full bg-[#4b0d18] py-20 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
@@ -259,7 +283,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 7: Soft Authority */}
+      {/* Section 8: Soft Authority */}
       {/* <section className="w-full bg-white py-16 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
@@ -278,7 +302,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      {/* Section 8: CTA */}
+      {/* Section 9: CTA */}
       <section className="relative py-24">
         <div className="absolute inset-0 z-0">
           <Image
@@ -292,12 +316,19 @@ export default function Home() {
           <div className="absolute inset-0 bg-black opacity-60"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h2 className="text-4xl font-bold text-white mb-4">Ready to grow your business properly?</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Let&apos;s Discuss Your Growth Goals</h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-            Book a strategy session. Let&apos;s build a clear path forward together.
+            Whether you are seeking financing, strategic advisory, or business support solutions, Qash Capital is ready to work with you.
           </p>
-          <a href="/contact" className="bg-white text-[#4b0d18] hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg transform hover:scale-105">
-            Book a Strategy Session
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/advisory" className="bg-white text-[#4b0d18] hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg transform hover:scale-105">
+              Schedule a Consultation
+            </a>
+            <a href="/contact" className="border border-white text-white hover:bg-white hover:text-[#4b0d18] font-semibold py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg transform hover:scale-105">
+              Contact Us
+            </a>
+          </div>
+        </div>
           </a>
         </div>
       </section>
