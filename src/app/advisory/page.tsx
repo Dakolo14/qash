@@ -262,7 +262,7 @@ export default function BookAdvisory() {
                 </a>
                 <span className="text-gray-400">or</span>
                 <a
-                  href="https://wa.me/2348070454584"
+                  href="https://wa.me/2348055556745"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#4b0d18] hover:underline font-semibold"

@@ -81,7 +81,7 @@ export default function Contact() {
                   Have a quick question or not sure where to start? Reach out directly via WhatsApp or email and someone from our team will respond promptly.
                 </p>
                 <a
-                  href="https://wa.me/2348070454584"
+                  href="https://wa.me/2348055556745"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-full transition-colors shadow-md hover:shadow-lg transform hover:scale-105 inline-block"
@@ -99,17 +99,30 @@ export default function Contact() {
           <div className="container mx-auto px-4 sm:px-6 max-w-2xl text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-8">Or Reach Us Directly</h2>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <a
-                href="tel:08070454584"
-                className="flex items-center gap-3 justify-center text-gray-700 hover:text-[#4b0d18] transition-colors"
-              >
-                <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center shrink-0">
-                  <svg className="w-5 h-5 text-[#4b0d18]" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.5 11.5 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/>
-                  </svg>
-                </div>
-                <span className="font-medium">08070454584</span>
-              </a>
+              <div className="flex flex-col gap-3">
+                <a
+                  href="tel:08055556745"
+                  className="flex items-center gap-3 justify-center text-gray-700 hover:text-[#4b0d18] transition-colors"
+                >
+                  <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center shrink-0">
+                    <svg className="w-5 h-5 text-[#4b0d18]" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.5 11.5 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                  </div>
+                  <span className="font-medium">08055556745</span>
+                </a>
+                <a
+                  href="tel:09117770070"
+                  className="flex items-center gap-3 justify-center text-gray-700 hover:text-[#4b0d18] transition-colors"
+                >
+                  <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center shrink-0">
+                    <svg className="w-5 h-5 text-[#4b0d18]" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.5 11.5 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                  </div>
+                  <span className="font-medium">09117770070</span>
+                </a>
+              </div>
               <a
                 href="mailto:info@qashcapital.com"
                 className="flex items-center gap-3 justify-center text-gray-700 hover:text-[#4b0d18] transition-colors"
@@ -119,6 +132,10 @@ export default function Contact() {
                 </div>
                 <span className="font-medium">info@qashcapital.com</span>
               </a>
+            </div>
+            <div className="mt-8 pt-8 border-t border-gray-200">
+              <h3 className="font-semibold text-gray-900 mb-3">Visit Us</h3>
+              <p className="text-gray-600">3b Elegba Festival Drive, Oniru, Lekki, Lagos</p>
             </div>
           </div>
         </section>

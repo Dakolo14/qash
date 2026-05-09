@@ -21,7 +21,7 @@ const Footer = () => {
               <a href="https://www.linkedin.com/company/qash-capital/" className="w-10 h-10 rounded-full p-3 bg-[#4b0d18] flex items-center justify-center hover:bg-opacity-80 transition-colors">
                 <FaLinkedinIn className="text-white text-3xl" />
               </a>
-              <a href="https://wa.me/2348070454584" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full p-3 bg-[#4b0d18] flex items-center justify-center hover:bg-opacity-80 transition-colors">
+              <a href="https://wa.me/2348055556745" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full p-3 bg-[#4b0d18] flex items-center justify-center hover:bg-opacity-80 transition-colors">
                 <FaWhatsapp className="text-white text-3xl" />
               </a>
             </div>
@@ -52,11 +52,18 @@ const Footer = () => {
             <div className="space-y-4 mb-6">
               <div className="flex items-center space-x-3">
                 <FiPhone className="text-white text-xl" />
-                <span className="text-gray-200">08070454584</span>
+                <div className="flex flex-col">
+                  <span className="text-gray-200">08055556745</span>
+                  <span className="text-gray-200">09117770070</span>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <FiMail className="text-white text-xl" />
                 <span className="text-gray-200">info@qashcapital.com</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <svg className="w-5 h-5 text-white mt-1 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                <span className="text-gray-200 text-sm">3b Elegba Festival Drive, Oniru, Lekki, Lagos</span>
               </div>
             </div>
             <div className="space-y-4">

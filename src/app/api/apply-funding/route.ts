@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
         <p style="margin-top: 30px; color: #666; font-size: 14px;">
           Best regards,<br />
           <strong style="color: #4b0d18;">Qash Capital</strong><br />
-          <a href="mailto:info@qashcapital.com">info@qashcapital.com</a> | <a href="https://wa.me/2348070454584">WhatsApp: +234 807 045 4584</a>
+          <a href="mailto:info@qashcapital.com">info@qashcapital.com</a> | <a href="https://wa.me/2348055556745">WhatsApp: +234 805 555 6745</a>
         </p>
       </div>
     `;
