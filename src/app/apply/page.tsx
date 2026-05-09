@@ -59,7 +59,7 @@ export default function Funding() {
 
       setTimeout(() => setSubmitted(false), 5000);
     } catch (err) {
-      setError('Something went wrong. Please try again or email us directly at info@qashcapital.com');
+      setError('Something went wrong. Please try again or email us directly at info@qashcapitalltd.com');
       console.error(err);
     } finally {
       setLoading(false);
@@ -119,7 +119,7 @@ export default function Funding() {
               {[
                 {
                   title: "Business Loans",
-                  range: "₦500K – ₦20M",
+                  range: "₦500K – ₦50M",
                   desc: "Working capital and expansion financing for established SMEs ready to scale their operations.",
                 },
                 {

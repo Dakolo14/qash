@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
-import { FaEnvelope, FaWhatsapp, FaCalendarAlt, FaFileAlt } from "react-icons/fa";
+import { FaEnvelope, FaCalendarAlt, FaFileAlt } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Contact | Qash Capital",
@@ -73,20 +73,18 @@ export default function Contact() {
 
               {/* Option 3 */}
               <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col text-center">
-                <div className="w-16 h-16 rounded-full bg-green-600 flex items-center justify-center mx-auto mb-6">
-                  <FaWhatsapp className="text-white text-2xl" />
+                <div className="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center mx-auto mb-6">
+                  <FaEnvelope className="text-white text-2xl" />
                 </div>
-                <h2 className="text-xl font-bold text-gray-900 mb-3">Chat With Us</h2>
+                <h2 className="text-xl font-bold text-gray-900 mb-3">Email Us</h2>
                 <p className="text-gray-600 text-sm leading-relaxed mb-8 flex-1">
-                  Have a quick question or not sure where to start? Reach out directly via WhatsApp or email and someone from our team will respond promptly.
+                  Have questions or ready to discuss your growth goals? Send us an email and our team will respond within 24 hours.
                 </p>
                 <a
-                  href="https://wa.me/2348055556745"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-full transition-colors shadow-md hover:shadow-lg transform hover:scale-105 inline-block"
+                  href="mailto:info@qashcapitalltd.com"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition-colors shadow-md hover:shadow-lg transform hover:scale-105 inline-block"
                 >
-                  Chat on WhatsApp
+                  Send Email
                 </a>
               </div>
 
@@ -123,20 +121,10 @@ export default function Contact() {
                   <span className="font-medium">09117770070</span>
                 </a>
               </div>
-              <a
-                href="mailto:info@qashcapital.com"
-                className="flex items-center gap-3 justify-center text-gray-700 hover:text-[#4b0d18] transition-colors"
-              >
-                <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center shrink-0">
-                  <FaEnvelope className="text-[#4b0d18] text-lg" />
-                </div>
-                <span className="font-medium">info@qashcapital.com</span>
-              </a>
-            </div>
-            <div className="mt-8 pt-8 border-t border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-3">Visit Us</h3>
-              <p className="text-gray-600">3b Elegba Festival Drive, Oniru, Lekki, Lagos</p>
-            </div>
+              <div className="mt-8 pt-8 border-t border-gray-200">
+                <h3 className="font-semibold text-gray-900 mb-3\">Visit Us</h3>
+                <p className="text-gray-600\">3b Elegba Festival Drive, Oniru, Lekki, Lagos</p>
+              </div>
           </div>
         </section>
 

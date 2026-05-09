@@ -55,7 +55,7 @@ export default function BookAdvisory() {
 
       setTimeout(() => setSubmitted(false), 5000);
     } catch (err) {
-      setError('Something went wrong. Please try again or email us directly at info@qashcapital.com');
+      setError('Something went wrong. Please try again or email us directly at info@qashcapitalltd.com');
       console.error(err);
     } finally {
       setLoading(false);
@@ -255,20 +255,12 @@ export default function BookAdvisory() {
               <p className="text-gray-600 mb-4">Prefer to reach out directly?</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="mailto:info@qashcapital.com"
+                  href="mailto:info@qashcapitalltd.com"
                   className="text-[#4b0d18] hover:underline font-semibold"
                 >
                   Email us
                 </a>
-                <span className="text-gray-400">or</span>
-                <a
-                  href="https://wa.me/2348055556745"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#4b0d18] hover:underline font-semibold"
-                >
-                  Message on WhatsApp
-                </a>
+                <span className="text-gray-400">or call us at 08055556745</span>
               </div>
             </div>
 

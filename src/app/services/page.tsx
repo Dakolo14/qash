@@ -36,7 +36,7 @@ export default function Services() {
                 </div>
                 <h3 className="text-xl font-semibold text-center text-[#4b0d18] mb-2">Business Financing</h3>
                 <p className="text-gray-600 mb-4 text-center leading-relaxed">
-                  Financing solutions from ₦500K to ₦20M to help your business grow and thrive.
+                  Financing solutions from ₦500K to ₦50M to help your business grow and thrive.
                 </p>
                 <div className="flex justify-center">
                   <a href="/services" className="text-orange-600 hover:text-orange-700 font-semibold">Learn More</a>

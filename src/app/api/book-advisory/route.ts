@@ -69,8 +69,7 @@ export async function POST(request: NextRequest) {
 
         <p>If you have any questions in the meantime, feel free to reach out:</p>
         <ul style="list-style: none; padding: 0;">
-          <li>📧 <a href="mailto:info@qashcapital.com">info@qashcapital.com</a></li>
-          <li>💬 <a href="https://wa.me/2348055556745">WhatsApp: +234 805 555 6745</a></li>
+          <li>📧 <a href="mailto:info@qashcapitalltd.com">info@qashcapitalltd.com</a></li>
         </ul>
 
         <p style="margin-top: 30px; color: #666; font-size: 14px;">
@@ -83,7 +82,7 @@ export async function POST(request: NextRequest) {
     // Send email to admin
     const adminEmail = await resend.emails.send({
       from: 'bookings@qashcapital.com',
-      to: 'info@qashcapital.com',
+      to: 'info@qashcapitalltd.com',
       subject: `New Advisory Booking Request from ${data.name}`,
       html: adminEmailHtml,
       replyTo: data.email,
